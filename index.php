@@ -14,7 +14,7 @@
 	<!-- Mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Away</title>
+	<title>A short Project</title>
 
 	<!-- Bootstrap CSS Only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -29,14 +29,23 @@
 
 		<?php 
 
+			$confirmMessage ="";
+
 			if (isset($_POST['contact-button'])) {
 
-				echo "Welcome to our Commiunity";
+				$fullName 	= $_POST['fullname'] ;
+				$email 		= $_POST['emailaddress'] ;
+				$message 	= $_POST['message'] ;
+
+
+				echo $confirmMessage = '<div class="alert alert-info">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
 
 			}
 
 
 		?>
+
+		
 
 		<section>
 			<div class="container">
@@ -62,7 +71,7 @@
 
 									<label>Email</label>
 									
-									<input type="email" name="emailadress" class="form-control" placeholder="example@gmail.com" autocomplete="off" required>
+									<input type="email" name="emailaddress" class="form-control" placeholder="example@gmail.com" autocomplete="off" required>
 								
 								</div>
 
@@ -72,7 +81,7 @@
 									<label>Messege</label>
 
 									
-									<textarea name="messege" class="form-control" placeholder="Write massage here"></textarea>
+									<textarea name="message" class="form-control" placeholder="Write massage here"></textarea>
 
 									<br>
 								
@@ -95,6 +104,10 @@
 				</div>
 			</div>
 		</section>
+
+			
+
+
 		
 
 
