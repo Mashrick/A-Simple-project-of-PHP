@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,51 +20,75 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 	<!-- Own Style Sheet -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 </head>
 	<body>
+
+
+		<?php 
+
+			if (isset($_POST['contact-button'])) {
+
+				echo "Welcome to our Commiunity";
+
+			}
+
+
+		?>
 
 		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 offset-md-3">
 
-						<h1>Hello!!! Welcome Here</h1>
+						<h1>Contact Form</h1>
 
-							<form action="" method=""></form>
+						<h3>Fill Up This Form to contact Us</h3>
 
-							<div>
+							<form action="" method="POST">
+								
+								<div class="form-group">
 
-								<label>Username</label>
-								<br>
-								<input type="text" name="fullname">
+									<label>Username</label>							
+
+									<input type="text" name="fullname" class="form-control" placeholder="Full Name" autocomplete="off" required>
 							
-							</div>
+								</div>
 
-							<div>
 
-								<label>Email</label>
-								<br>
-								<input type="email" name="emailadress">
+								<div class="form-group">
+
+									<label>Email</label>
+									
+									<input type="email" name="emailadress" class="form-control" placeholder="example@gmail.com" autocomplete="off" required>
+								
+								</div>
+
+
+								<div class="form-group">
+
+									<label>Messege</label>
+
+									
+									<textarea name="messege" class="form-control" placeholder="Write massage here"></textarea>
+
+									<br>
+								
+								</div>
+
+
+								<div class="form-group">
+									
+									<button type="submit" class="btn btn-primary btn-lg" name="contact-button">Submit</button>
+								
+								</div>
+
+
+							</form>
+
 							
-							</div>
-
-							<div>
-
-								<label>Messege</label>
-								<br>
-								<input type="text" name="fullname">
-							
-							</div>
-
-							<div>
-								<br>
-
-								<button type="button" class="btn btn-primary btn-lg">Submit</button>
-							
-							</div>
 							
 						
 					</div>
