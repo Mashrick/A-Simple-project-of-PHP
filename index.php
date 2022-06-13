@@ -38,7 +38,7 @@
 				$message 	= $_POST['message'] ;
 
 
-				echo $confirmMessage = '<div class="alert alert-info">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
+				$confirmMessage = '<div class="alert alert-info">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
 
 			}
 
@@ -96,6 +96,14 @@
 
 
 							</form>
+
+							<br>
+						
+							<?php 
+
+								echo $confirmMessage;
+
+							?>
 
 							
 							
