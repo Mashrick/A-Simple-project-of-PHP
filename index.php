@@ -29,7 +29,9 @@
 
 		<?php 
 
-			$confirmMessage ="";
+			$confirmMessage = "";
+			$yourMessage = "";
+			$reviewMessage = "";
 
 			if (isset($_POST['contact-button'])) {
 
@@ -38,7 +40,12 @@
 				$message 	= $_POST['message'] ;
 
 
-				$confirmMessage = '<div class="alert alert-info">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
+				$confirmMessage = '<div class="alert alert-primary">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
+
+				$yourMessage = '<div class="alert alert-success"> <h3>Your Message:</h3>' .$message. '</div>';
+
+				$reviewMessage = '<div class="alert alert-info">We are reviewing your message. Thanks to be with us.</div>';;
+
 
 			}
 
@@ -98,10 +105,18 @@
 							</form>
 
 							<br>
-						
+
 							<?php 
 
 								echo $confirmMessage;
+
+								echo "<br>";
+
+								echo $yourMessage;
+
+								echo "<br>";
+
+								echo $reviewMessage;
 
 							?>
 
