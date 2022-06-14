@@ -26,12 +26,19 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Josefin Sans', sans-serif;
 	color: #1a1a1a;
 
+
 }
 
 p{
 
 	font-size: 16px;
 	color: #000000
+}
+
+.header_content{
+	text-align: center;
+	
+	
 }
 
 
