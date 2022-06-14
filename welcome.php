@@ -34,6 +34,8 @@
 </head>
 	<body>
 
+		<!--  Welcome Form PHP -->
+
 		<?php 
 
 			$confirmMessage = "";
@@ -71,8 +73,11 @@
 
 		?>
 
+		<!-- End of Welcome Form PHP -->
+
 
 		
+		<!-- Welcome Form -->
 
 		<section>
 			<div class="container">
@@ -116,6 +121,8 @@
 			</div>
 		</section>
 
+
+		<!-- End of Welcome Form -->
 			
 
 
