@@ -3,8 +3,6 @@
 
 
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,32 +24,6 @@
 </head>
 	<body>
 
-
-		<?php 
-
-			$confirmMessage = "";
-			$yourMessage = "";
-			$reviewMessage = "";
-
-			if (isset($_POST['contact-button'])) {
-
-				$fullName 	= $_POST['fullname'] ;
-				$email 		= $_POST['emailaddress'] ;
-				$message 	= $_POST['message'] ;
-
-
-				$confirmMessage = '<div class="alert alert-primary">Welcome to our Community '  .$fullName. '. Thanks for messaging Us. We will inform you on this email address: ' .$email. '</div>';
-
-				$yourMessage = '<div class="alert alert-success"> <h3>Your Message:</h3>' .$message. '</div>';
-
-				$reviewMessage = '<div class="alert alert-info">We are reviewing your message. Thanks to be with us.</div>';;
-
-
-			}
-
-
-		?>
-
 		
 
 		<section>
@@ -59,11 +31,15 @@
 				<div class="row">
 					<div class="col-md-6 offset-md-3">
 
-						<h1>Contact Form</h1>
+							<div class="header_content">
 
-						<h3>Fill Up This Form to contact Us</h3>
+								<h1 class="fw-bold index_header_text">Contact Form</h1>
 
-							<form action="" method="POST">
+								<h3 class="fw-bold">Fill Up This Form to contact Us</h3>
+
+							</div>		
+
+							<form action="welcome.php" method="POST">
 								
 								<div class="form-group">
 
@@ -104,25 +80,8 @@
 
 							</form>
 
-							<br>
 
-							<?php 
-
-								echo $confirmMessage;
-
-								echo "<br>";
-
-								echo $yourMessage;
-
-								echo "<br>";
-
-								echo $reviewMessage;
-
-							?>
-
-							
-							
-						
+										
 					</div>
 				</div>
 			</div>
