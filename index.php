@@ -34,7 +34,7 @@
 
 							<div class="header_content">
 
-								<h1 class="fw-bold index_header_text">Contact Form</h1>
+								<h1 class="fw-bold">Contact Form</h1>
 
 								<h3 class="fw-bold">Fill Up This Form to contact Us</h3>
 
@@ -106,3 +106,8 @@
 
 	</body>
 </html>
+
+
+
+
+
