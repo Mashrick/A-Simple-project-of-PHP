@@ -25,6 +25,7 @@
 	<body>
 
 		
+		<!-- Contact US Form -->
 
 		<section>
 			<div class="container">
@@ -80,12 +81,14 @@
 
 							</form>
 
-
 										
 					</div>
 				</div>
 			</div>
 		</section>
+
+
+		<!-- End of Contact US Form -->
 
 			
 
